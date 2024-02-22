@@ -5,8 +5,8 @@ public class Mago extends Personaje {
     private double sabiduria;
     private double energiaMagica;
 
-    public Mago(String nombre){
-        super(nombre);
+    public Mago(String nombre, String tipo){
+        super(nombre, tipo);
         this.inteligencia = 100.0;
         this.sabiduria = 100.0;
         this.energiaMagica = 150.0;

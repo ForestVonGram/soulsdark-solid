@@ -2,13 +2,16 @@ package org.example;
 
 public abstract class Personaje {
     private final String nombre;
+    private final String tipo;
     private String apodo;
     private String descripcion;
     private double dinero;
 
-    public Personaje(String nombre){
+    public Personaje(String nombre, String tipo){
         assert nombre != null && !nombre.isBlank();
+        assert tipo != null && !tipo.isBlank();
         this.nombre = nombre;
+        this.tipo = tipo;
         this.apodo = "";
         this.descripcion = "";
         this.dinero = 100.0;
@@ -29,7 +32,7 @@ public abstract class Personaje {
         this.apodo = apodo;
     }
 
-    public void setDescripción(String apodo){
+    public void setDescripcion(String apodo){
         assert apodo != null && !apodo.isBlank();
         this.apodo = apodo;
     }

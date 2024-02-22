@@ -5,8 +5,8 @@ public class Guerrero extends Personaje{
     private double resistencia;
     private double vitalidad;
 
-    public Guerrero(String nombre){
-        super(nombre);
+    public Guerrero(String nombre, String tipo){
+        super(nombre, tipo);
         this.fuerza = 200.0;
         this.resistencia = 150.0;
         this.vitalidad = 200.0;
