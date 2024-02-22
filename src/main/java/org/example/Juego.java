@@ -6,6 +6,7 @@ import java.util.LinkedList;
 public class Juego {
     private Collection<Jugador> jugadores;
     private Collection<Personaje> personajes;
+
     public Juego() {
         this.jugadores = new LinkedList<>();
         this.personajes = new LinkedList<>();
@@ -16,9 +17,7 @@ public class Juego {
     }
 
     public void crearJugador(String id) {
-        assert id != null && !id.isBlank();
         Jugador jugador = new Jugador(id);
-
         jugadores.add(jugador);
     }
 
