@@ -5,8 +5,8 @@ public class Arquero extends Personaje{
     private double agilidad;
     private double precision;
 
-    public Arquero(String nombre) {
-        super(nombre);
+    public Arquero(String nombre, String tipo) {
+        super(nombre, tipo);
         this.destreza = 120;
         this.agilidad = 150;
         this.precision = 125;
